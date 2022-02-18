@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+
+
+<!-- Mirrored from pacman.cc/html5/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Feb 2022 07:33:16 GMT -->
+<head>
+
+
+<title>Pacman</title>
+<meta name="description" content="Play pacman and ms pacman. We also have cheats and practice modes." />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+
+<!-- Allow page to be saved as web app on iOS. -->
+<meta name="apple-mobile-web-app-capable" content="yes" />
+
+<!-- Hide status bar -->
+<meta names="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+<!-- icon used for iOS Web App -->
+<link rel="apple-touch-icon-precomposed" href="https://pacman.cc/" />
+
+<link rel="icon" type="image/png" href="icon/favicon.png" />
+
+<style>
+body {
+margin: 0;
+background: #000;
+}
+
+#canvas {
+min-height: 70vh;
+max-width: 100%;
+background: url('') center no-repeat;
+background-size: 50%;
+background-position-x: 55%;
+}
+
+@media (min-width:801px) {
+#canvas {
+background-position-x: 50%;
+background-size: 20%;
+min-height: 100vh;
+}
+}
+
+
+.splitter {
+margin-top: 30px;
+margin-bottom: 30px;
+}
+
+@font-face {
+font-family: 'ArcadeR';
+src: url('font/ARCADE_R.TTF');
+/*
+src: url('font/PressStart2P.ttf');
+*/
+}
+
+#canvas-warning {
+color: #FF0;
+font-size: 1.5em;
+}
+
+#about-game{
+
+color: white;
+font-family: ArcadeR;
+font-size: 1em;
+text-align: center;
+max-width: 700px;
+}
+</style>
+
+<script src="pacman.js"></script>
+
+
+<style>
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+#leftads, #rightads{ display: none; }
+}
+</style>
+</head>
+
+
+<body>
+<div id="about-game" >
+<h1 style="font-size: 0.9em;">HTML5 PAC-MAN GAMES</h1>
+<a class='start-btn' href="https://pacman.cc/"></a>
+</div>
+
+<canvas id='canvas'>
+<div id="canvas-warning">Your browser does not support HTML Canvas. Please upgrade!</div>
+</canvas>
+<canvas id='atlas' style="display:none"></canvas>
+
+
+
+<script>window.addEventListener("keydown", function(e) {
+// space and arrow keys
+if([32, 37, 38, 39, 40].indexOf(e.keyCode) > -1) {
+e.preventDefault();
+}
+}, false);</script>
+
+
+</body>
+
+
+<!-- Mirrored from pacman.cc/html5/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Feb 2022 07:33:17 GMT -->
+</html>
