@@ -1,0 +1,27 @@
+body {
+    background-color: black;
+}
+
+.title {
+  color: white;
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  font-size: 60px;
+  margin: 15px;
+  text-decoration: underline;
+}
+
+.info {
+  color: white;
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  font-size: 30px;
+  margin: 15px;
+}
+
+.sub {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  margin: 5px;
+}
